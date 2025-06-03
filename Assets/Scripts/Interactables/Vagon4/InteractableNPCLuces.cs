@@ -30,7 +30,7 @@ public class InteractableNPCLuces : NPCBase, IInteractable
     public void OnClickAction() 
     {
       
-        if (!interactableBombillaCarta.ComprobarLuces() && !interactableBombillaCarta.ComprobarCortinas())
+        if (!interactableBombillaCarta.ComprobarLuces() || !interactableBombillaCarta.ComprobarCortinas())
         {
             if (!isDormida)
                 StartCoroutine(Yap(dialogos.frases[0], hablando, normal, spriteRenderer, yapBubble));
