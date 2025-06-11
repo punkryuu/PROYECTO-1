@@ -5,7 +5,7 @@ public class CameraController : MonoBehaviour {
     private float moveSpeed = 15f;
     private int edgeScrollSize = 50;
     private float minX = -18.7f;
-    private float maxX = 18.7f;
+    private float maxX = 21f;
     [SerializeField] GameObject flechaDerecha;
     [SerializeField] GameObject flechaIzquierda;
     private bool controlsEnabled = true;
